@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&family=Varela+Round&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Varela Round";
+  letter-spacing: 1px;
+}
+nav {
+  background: linear-gradient(-135deg, #ffffff, #000000);
+}
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  height: 85px;
+  font-size: 25px;
+  color: #fff;
+}
+.container {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+  margin-top: 0.01em;
+  background: linear-gradient(-135deg, red, rgb(253, 253, 253));
+  background-position: center;
+  padding-top: -1000px;
+  padding-bottom: 450px;
+  background-size: cover;
+  height: 56rem;
+}
+.container h1 {
+  margin-bottom: 3em;
+  text-transform: uppercase;
+}
+.container input {
+  height: 3em;
+  width: 50em;
+  cursor: pointer;
+  padding: 25px 255px;
+}
+.container input:hover {
+  background: azure;
+  border: 2.1px solid #c54bf5;
+}
+.container button {
+  height: 4em;
+  width: 15em;
+  cursor: pointer;
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  color: #fff;
+  border-radius: 4px;
+  font-weight: 600;
+}
+.container img {
+  height: 200px;
+  width: 200px;
+  margin-top: 450px;
+  position: absolute;
+}
+.wrapper h1 {
+  margin-bottom: 14em;
+  margin-left: -1em;
+  margin-top: 19em;
+  text-transform: uppercase;
+}
+.wrapper input {
+  padding: 15px 15px;
+  background: wheat;
+  position: absolute;
+  margin-top: -20rem;
+  margin-left: -600px;
+  cursor: pointer;
+}
+.wrapper form {
+  margin-right: -52rem;
+  margin-top: 2em;
+  position: unset;
+}
+.wrapper textarea {
+  height: 180px;
+  width: 600px;
+  margin: -200px;
+  margin-top: -210px;
+  margin-left: 20px;
+  padding: 75px 50px;
+  position: absolute;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+}
+.wrapper textarea:hover {
+  background: white;
+  border: 2px solid #c54bf5;
+}
+.wrapper img {
+  height: 200px;
+  width: 200px;
+  margin-left: -700px;
+  margin-top: -220px;
+  position: absolute;
+}
+.wrapper {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 0.1em;
+  padding-bottom: 40em;
+  background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+  width: 100%;
+  height: 100vh;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 15px;
+  }
+  .container input {
+    width: 30em;
+    padding: 10px 120px;
+  }
+  .container button {
+    margin-top: 10px;
+  }
+  .wrapper {
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-left: -8px;
+    background: linear-gradient(-135deg, #71b7e6, #9b59b6);
+    width: 101.6%;
+    height: 100vh;
+  }
+  .wrapper textarea {
+    margin-top: 10px;
+    margin-left: -240px;
+    width: 487px;
+    height: 200px;
+  }
+  .wrapper img {
+    margin-left: -510px;
+  }
+}
