@@ -9,39 +9,37 @@
   </head>
   <body>
     <nav class="navbar bg-light">
-      <!--Bootstrap-->
       <a class="navbar-brand">
-        <img src="/images/icons8-bulb-64.png" alt="" />
-        <h2>QR code scanner & Reader</h2>
+        <img src="icons/icons8-bulb-64.png" alt="" />
+        <h2>QR code Generator & Reader</h2>
       </a>
     </nav>
     <section>
       <div class="container">
-        <h1>QR Code Genrator</h1>
+        <h1>QR Code Generator</h1>
         <div class="box">
           <input type="text" id="input" placeholder="Enter Your Text Here" />
-          <button type="submit" id="qr-code">Genrate</button>
+          <button type="submit" id="qr-code">Generate</button>
         </div>
         <span id="loading"></span>
-        <img id="code-img" />
+        <img id="code-img"alt="Your Code Image" />
       </div>
     </section>
-
+     <hr>
     <!--Reader-->
     <section>
       <div class="wrapper">
         <h1>QR Code Reader</h1>
         <form action="#">
           <input type="file" />
-          <img src=" " />
+          <img src=" "/>
           <div class="content"></div>
         </form>
         <div class="details">
           <textarea
             id="res"
             spellcheck="false"
-            disabled
-            placeholder="Decoded Message"
+            placeholder="Your Decoded Message"
           ></textarea>
         </div>
       </div>
