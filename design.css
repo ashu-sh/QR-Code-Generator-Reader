@@ -7,7 +7,7 @@
   letter-spacing: 1px;
 }
 nav {
-  background: linear-gradient(-135deg, #ffffff, #000000);
+  background:black;
 }
 .navbar-brand {
   display: flex;
@@ -16,6 +16,7 @@ nav {
   height: 85px;
   font-size: 25px;
   color: #fff;
+  text-decoration: none;
 }
 
 .container {
@@ -56,6 +57,7 @@ nav {
   /* border: 2.1px solid #c54bf5; */
   outline: none;
   border-radius: 20px;
+  transition: 0.6s;
 }
 .container button {
   height: 4em;
@@ -71,6 +73,7 @@ nav {
 }
 .container button:hover{
   background: blue;
+  transition: 0.9s;
 }
 .container img {
   height: 200px;
@@ -142,7 +145,10 @@ nav {
   height: 100vh;
 }
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1300px) {
+  .nav{
+    width: auto;
+  }
   .navbar-brand {
     display: flex;
     align-items: center;
@@ -150,7 +156,7 @@ nav {
     font-size: 15px;
   }
   .container input {
-    width: 30em;
+    width:20rem;
     padding: 10px 20px;
   }
   .container button {
@@ -165,14 +171,64 @@ nav {
     width: 101.6%;
     height: 100vh;
   }
-  .wrapper textarea {
+  /* .wrapper textarea {
     margin-top: 10px;
     margin-left: -240px;
     width: 486px;
     height: 200px;
-    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  }
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px; */
+  .wrapper textarea{
+     position: absolute;
+     width: auto;
+     padding: -100px 80px;
+     margin: 50px -130px;
+  }  
   .wrapper img {
-    margin-left: -510px;
+
+    margin: -210px -525px;
+    /* width: auto; */
+  }
+  .wrapper form{
+    /* position: absolute; */
+    width: auto;
+    /* margin: 10px 40px; */
+    margin-left: 35px;
+  }
+}
+@media screen and (max-width: 500px){
+
+  nav{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 470px){
+
+  nav{
+    width: 100%;
+  }
+  .navbar-brand{
+    font-size: small;
+  }
+  .container input{
+
+    width: auto;
+    padding: 0px 200px 0px 20px;
+  }
+}
+@media screen and (max-width: 400px){
+
+  .container input{
+
+    width: 75%;
+    padding: 10px 20px;
+  }
+}
+@media screen and (max-width: 355px){
+
+  .nav{
+    width:100px;
+  }
+  .navbar-brand{
+    font-size:10px;
   }
 }
