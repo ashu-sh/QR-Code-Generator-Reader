@@ -29,4 +29,4 @@
  - Microsoft Visual studio code
  
 # demo link
-  - 
+  - https://project-25.netlify.app/
